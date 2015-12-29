@@ -8,6 +8,15 @@
 // Simple jQuery event handler
 $(document).ready(function () {
     "use strict";
+
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          console.log(position.coords.latitude, position.coords.longitude);
+        });
+    } else {
+      alert("No se tiene acceso a la geolocalización!");
+    }
+
     function getUrlParameter(name) {
         return decodeURIComponent((new RegExp("[?|&]" + name + "=" + "([^&;]+?)(&|#|;|$)").exec(location.search) || [,""])[1].replace(/\+/g, "%20")) || null;
     }
