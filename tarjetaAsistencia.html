@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tarjeta de Asistencia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div style="background-color: #f0f0f0; padding: 1%; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif !important; font-size: 1rem;">
+        <a href="/" style="display: block; margin: 0 auto; background: #333; color: #fff; border: none; padding: 1em 2em; width: 30%; text-align:center;">Regresar</a>
+        <table style="margin: 0 auto; border: none; width: 100%; background-color: #ffffff; border: 1px solid #f2f2f2;">
+            <thead>
+                <tr>
+                    <th style="text-align: center;" colspan="2">
+                        <img src="http://ucsp.edu.pe/congresopsicologia/wp-content/uploads/2013/08/LOGO-UCSP-300x144.png" alt="UCSP - logo" style="height: 70px;" height="70" />
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" style="background: #4682b4; color: #ffffff; padding: 0.75%;">
+                        La hora de la entrada/salida es:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h4 id="horaToma" style="text-align: center; font-size: 2rem;"></h4> <!-- hora exacta de la toma de la asistencia -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="" id="fotoPersona" style="margin: auto; display: block; border: 1px solid #dddddd; padding: 2px; background: #f3f3f3;"/> <!-- hora exacta de la toma de la asistencia -->
+                    </td>
+                </tr>
+                <tr style="border: 1px solid #999999; border-left: none; border-right: none;">
+                    <td colspan="2" style="padding: 0.75%; border: 1px solid #999999; border-left: none; border-right: none;">
+                        <h4 style="color: #4682b4;" id="alumno"></h4> <!-- Nombre del alumno -->
+                    </td>
+                </tr>
+                <tr style="border: 1px solid #999999; border-left: none; border-right: none;">
+                    <td style="padding: 0.75%; border: 1px solid #999999; border-left: none; border-right: none; border-top: none;">
+                        <p style="color: #4682b4;" id="evento"></p> <!-- Nombre del evento --> 
+                        <p style="color: #4682b4;" id="expositor"></p> <!-- Expositor del evento --> 
+                        <p style="color: #4682b4;" id="lugar"></p> <!-- Lugar del evento -->
+                    </td>
+                    <td style="border: 1px solid #999999; border-left: none; border-right: none; border-top: none;">
+                        <table style="color: #ffffff; width: 100%; height: auto;">
+                            <tr>
+                                <td style="border: 1px solid #ffffff; border-left: none; border-right: none; border-bottom: none; padding: 1.5%; background: #333333; text-align: center;" id="fecha"></td> <!-- Fecha del evento -->
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #ffffff; border-left: none; border-right: none; padding: 1.5%; background: #333333; text-align: center;">
+                                    Hora de Ingreso<br />
+                                    <span style="font-size: 1.5rem;" id="hora"></span> <!-- hora de ingreso para el evento -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>                
+                <tr>
+                    <td style="font-size: 0.75rem; font-weight: bold; color: #333333; padding: 0.75%;">
+                        Universidad Católica San Pablo<br />
+                        Campiña Paisajista s/n Quinta Vivanco<br />
+                        Barrio de San Lázaro, Arequipa - Perú<br />
+                        054 - 605630 anexo 391<br />
+                        <a href="http://ucsp.edu.pe/" style="color: #2c3e50;">UCSP</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
