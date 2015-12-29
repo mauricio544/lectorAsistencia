@@ -31,8 +31,11 @@ $(document).ready(function () {
     });
     $("#barcode").on("keyup paste mouseup input change", function(event){ 
         var _this = $(this);
-        setTimeout(function(){
-            document.location.href = "tarjetaAsistencia.html?qrCode=" + _this.val();         
-        }, 1000)        
+        if(_this.val() !== "")
+        {
+            setTimeout(function(){
+                document.location.href = "tarjetaAsistencia.html?qrCode=" + _this.val();         
+            }, 1000)        
+        }        
     });
 });
